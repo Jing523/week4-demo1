@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<jboss-web>
+    <context-root>/week4-demo1</context-root>
+</jboss-web>

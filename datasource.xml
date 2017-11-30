@@ -1,0 +1,16 @@
+<xa-datasource jndi-name="java:jboss/datasources/SampleDS" pool-name="java:jboss/datasources/SampleDS" enabled="true">
+    <xa-datasource-property name="DatabaseName">
+        example
+    </xa-datasource-property>
+    <xa-datasource-property name="ServerName">
+        localhost
+    </xa-datasource-property>
+    <xa-datasource-property name="User">
+        web_user
+    </xa-datasource-property>
+    <xa-datasource-property name="Password">
+        password
+    </xa-datasource-property>
+    <xa-datasource-class>org.postgresql.xa.PGXADataSource</xa-datasource-class>
+    <driver>postgresql-42.1.4.jar</driver>
+</xa-datasource>
