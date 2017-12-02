@@ -10,6 +10,7 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -29,5 +30,13 @@ public class UserEndpoint {
     public SerializedObject<List<User>> get() {
         List<User> users = userRepository.findAll();
         return VIEW.serializeList(users);
+    }
+
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public SerializedObject<User> get(@PathParam("id") int id) {
+        User user = userRepository.findBy(id);
+        return VIEW.serialize(user);
     }
 }

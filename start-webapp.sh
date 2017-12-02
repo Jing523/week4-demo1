@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-export JBOSS_HOME=~/Servers/wildfly-10.1.0.Final
+export JBOSS_HOME=~/workspace/servers/wildfly
 PROJECT_HOME=~/workspace/week4-demo1
 
 rm -rf $PROJECT_HOME/target
