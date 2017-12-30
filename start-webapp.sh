@@ -22,4 +22,4 @@ fi
 
 ln -s $PROJECT_HOME/target/week4-demo1.war $JBOSS_HOME/standalone/deployments/week4-demo1.war
 
-$JBOSS_HOME/bin/standalone.sh -Ddevelopment.path=$PROJECT_HOME
+$JBOSS_HOME/bin/standalone.sh --debug 8787 -b=0.0.0.0 -Ddevelopment.path=$PROJECT_HOME
